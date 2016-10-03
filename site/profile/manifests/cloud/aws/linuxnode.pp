@@ -8,9 +8,9 @@ define profile::cloud::aws::linuxnode (
   $subnet = 'tse-subnet-avza-1',
   $pp_department = 'TSE',
   $pp_project = 'Demo IAAI',
-  $pp_created_by = 'james.jones',
-  $key_name = 'jamesjones-pl3',
-  $master_ip = '10.98.10.165',
+  $pp_created_by = 'ehron',
+  $key_name = 'ehron',
+  $master_ip = '10.98.10.13',
   $master_host = $::fqdn,
   $agent_role = 'base',
 ) {

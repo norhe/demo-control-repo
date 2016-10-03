@@ -72,7 +72,7 @@ YAML
 "console_admin_password": "puppet"
 "puppet_enterprise::puppet_master_host": "%{::trusted.certname}"
 "puppet_enterprise::profile::master::code_manager_auto_configure": true
-"puppet_enterprise::profile::master::r10k_remote": "https://github.com/velocity303/demo-control-repo.git"
+"puppet_enterprise::profile::master::r10k_remote": "https://github.com/norhe/demo-control-repo.git"
 "puppet_enterprise::profile::master::r10k_private_key": "/etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa"
 FILE
   /tmp/puppet-enterprise-2016.2.1-el-7-x86_64/puppet-enterprise-installer -c /tmp/pe.conf
@@ -86,7 +86,7 @@ rbac_user { 'deploy':
     ensure       => 'present',
     name         => 'deploy',
     display_name => 'deployment user account',
-    email        => 'james.jones@puppet.com',
+    email        => 'ehron@puppet.com',
     password     => 'puppetlabs',
     roles        => [ 'Code Deployers' ],
 }

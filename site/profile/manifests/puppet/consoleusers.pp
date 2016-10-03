@@ -3,7 +3,7 @@ class profile::puppet::consoleusers {
     ensure       => 'present',
     name         => 'deploy',
     display_name => 'deployment user account',
-    email        => 'james.jones@puppet.com',
+    email        => 'ehron@puppet.com',
     password     => 'puppetlabs',
     roles        => [ 'Code Deployers' ],
   }
